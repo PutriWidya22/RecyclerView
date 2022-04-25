@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- TextView dengan id "text" dan layout lebar serta tingginya menggunakan
+     wrap_content atau disesuaikan dengan isi kontennya. textnya menggunakan
+     format size : 22sp, warna hitam atau dengan code #000 dan textnya dibuat
+     tebal. memiliki warna background aqua atau dengan code #00ffff.
+     memiliki margin atau batas antara textnya 6dp dan batas dengan garis pinggir
+     layoutnya 20dp-->
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/affirmation"
+    android:textSize="22sp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:padding="20dp"
+    android:background="#00ffff"
+    android:layout_marginTop="6dp"
+    android:layout_marginRight="6dp"
+    android:layout_marginLeft="6dp"
+    android:layout_marginBottom="6dp"
+    />
+

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- menggunakan constraintLayout dengan layout lebar dan tingginya menggunakan match_parent atau
+disesuaikan dengan tampilan smartphone. -->
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <!-- recycleview dengan id "recycler_view", layout lebar dan tingginya menggunakan
+     match_parent atau disesuaikan dengan tampilan smartphone. pada recyclerview tersebut
+     juga menggunakan vertikal scroll atau atas ke bawah dan menggunakan LinierLayoutManager. -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="95dp"
+        android:scrollbars="vertical"
+        app:layoutManager="LinearLayoutManager"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="127dp" />
+
+    <!-- ImageView dengan id "dgu", layout width dan heightnya 165dp dan 87dp
+     menyisipkan gambar pada drawble dengan nama dgu.-->
+    <ImageView
+        android:id="@+id/dgu"
+        android:layout_width="165dp"
+        android:layout_height="87dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.009"
+        app:srcCompat="@drawable/dgu"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
